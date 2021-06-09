@@ -142,10 +142,7 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, flavor){
-    if(arr.includes(flavor)){
-        let position = arr.indexOf(flavor);
-        arr.splice(position);
-    }
+    arr.splice(arr.indexOf(flavor), arr.indexOf(flavor));
     return arr;
 }
 
